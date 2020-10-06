@@ -1,24 +1,14 @@
-import { Link } from "gatsby"
-
 import React from "react"
+import { DesktopNavMenu } from "./desktopNav"
+import MobileNavMenu from "./mobileNav"
 
-const Header = () => (
-  <header>
-    <div className="container">
-      <div className="inner-header">
-        <div className="logo">
-          <Link to="/">MUNIME</Link>
-        </div>
-        <div className="navigation">
-          <nav>
-            <Link to="/story">STORY</Link>
-            <Link to="/animation">ANIMATION</Link>
-            <Link to="/about">ABOUT</Link>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-)
+const Header = () => {
+  return (
+    <>
+      <DesktopNavMenu />
+      <MobileNavMenu />
+    </>
+  )
+}
 
 export default Header

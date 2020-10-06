@@ -3,12 +3,17 @@ import "../styles/styles.scss"
 
 //Import Components
 import Header from "../components/header"
-import Hero from "../components/hero"
+import AboutPage from "./about"
+import StoryPage from "./story"
+import AnimationPage from "./animation"
 
 const IndexPage = () => (
   <div>
-    <Header />
-    <Hero />
+    <Header>
+      <StoryPage />
+      <AnimationPage />
+      <AboutPage />
+    </Header>
   </div>
 )
 

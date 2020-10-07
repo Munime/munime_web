@@ -2,11 +2,11 @@ import React from "react"
 import { DesktopNavMenu } from "./desktopNav"
 import MobileNavMenu from "./mobileNav"
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <>
-      <DesktopNavMenu />
-      <MobileNavMenu />
+      <DesktopNavMenu children={children} />
+      <MobileNavMenu children={children} />
     </>
   )
 }

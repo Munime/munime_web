@@ -1,7 +1,12 @@
 import React from "react"
+import Layout from "../utils/Layout"
 
 const StoryPage = () => {
-  return <h1>Story Page</h1>
+  return (
+    <Layout>
+      <h2>Story Page</h2>
+    </Layout>
+  )
 }
 
 export default StoryPage

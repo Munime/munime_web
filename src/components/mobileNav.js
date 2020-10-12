@@ -7,7 +7,9 @@ const MobileNavMenu = () => {
   const [menuOpen, toggleMenuOpen] = useState(false)
   return (
     <MenuBar>
-      <LogoIcon>Munime</LogoIcon>
+      <LogoIcon>
+        <Link to="/">Munime</Link>
+      </LogoIcon>
       <MenuIconContainer>
         <MenuIcon menuOpen={menuOpen} onClick={() => toggleMenuOpen(!menuOpen)}>
           <div />
@@ -18,7 +20,7 @@ const MobileNavMenu = () => {
       <MenuLink menuOpen={menuOpen}>
         <ul>
           <li>
-            <Link to="/story">STORY</Link>
+            <Link to="/teaser">TEASER</Link>
           </li>
           <li>
             <Link to="/animation">ANIMATION</Link>
@@ -39,7 +41,7 @@ const MenuBar = styled.header`
   height: 3rem;
   position: fixed;
   width: 100%;
-  background: #f28482;
+  background: transparent;
   border-bottom: #f6bd60;
   z-index: 10;
   display: flex;
@@ -128,15 +130,22 @@ const MenuLink = styled.nav`
 `
 
 const LogoIcon = styled.div`
-  font-size: 1.2rem;
-  font-weight: 200;
+  text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1rem;
-  color: #f7ede2;
   display: flex;
   flex-direction: row;
   justify-content: flex-strat;
   align-items: center;
   margin: 1rem;
+
+  a {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #f7ede2;
+    text-decoration: none;
+  }
+  
 `
 export default MobileNavMenu

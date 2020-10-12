@@ -4,7 +4,8 @@ import Layout from "../utils/Layout"
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>About Page</h1>
+      <h2>About Page</h2>
+      <p>Here you will read about a Munime project</p>
     </Layout>
   )
 }

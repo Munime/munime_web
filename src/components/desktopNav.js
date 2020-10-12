@@ -12,7 +12,7 @@ export const DesktopNavMenu = () => {
         </LogoIcon>
         <ul>
           <li>
-            <Link to="/story">STORY</Link>
+            <Link to="/teaser">TEASER</Link>
           </li>
           <li>
             <Link to="/animation">ANIMATION</Link>
@@ -34,14 +34,13 @@ const StyledHeader = styled.header`
     width: 100%;
     top: 0;
     z-index: 10;
-    transition: backgroud 300ms;
-    background: ${({ background }) => (background ? "#000" : "#f28482")};
+    
 
     ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: center;
+      align-self: center;
       width: 100%;
       margin: 0;
 
@@ -49,16 +48,16 @@ const StyledHeader = styled.header`
         list-style: none;
 
         a {
-          font-size: 1.2rem;
-          font-weight: 700;
+          font-size: 1rem;
+          font-weight: 400;
           text-decoration: none;
-          letter-spacing: 1.5px;
+          letter-spacing: 1.8px;
           color: #f7ede2;
           margin-right: 2rem;
           transition: color 200ms;
 
           :hover {
-            color: #84a59d;
+            color: #f28482;
           }
         }
       }
@@ -69,7 +68,7 @@ const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-self: center;
   width: 100%;
   margin: 0;
 `
@@ -78,7 +77,8 @@ const LogoIcon = styled.div`
   flex-direction: row;
   justify-content: flex-strat;
   align-items: center;
-  margin: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.1rem;
 
   a {
     font-size: 1.2rem;
